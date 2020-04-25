@@ -21,8 +21,12 @@ public class VideoSync : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //Debug.Log(videoPlayer.time);
-        videoPlayer.time = TimeLineManager.time;
+
+        if (TimeLineManager.enabled == true)
+        {
+            //Debug.Log(videoPlayer.time);
+            videoPlayer.time = TimeLineManager.time;
+        }
 
     }
 
