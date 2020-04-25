@@ -549,9 +549,9 @@ MonoBehaviour:
   m_Tracks:
   - {fileID: -832418453801635855}
   - {fileID: -6478020035128889786}
-  m_FixedDuration: 465.43333333333334
+  m_FixedDuration: 212.125
   m_EditorSettings:
-    m_Framerate: 60
+    m_Framerate: 24
   m_DurationMode: 1
   m_MarkerTrack: {fileID: 385433298448326973}
 --- !u!114 &385433298448326973
