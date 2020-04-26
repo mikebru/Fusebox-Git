@@ -6,7 +6,7 @@ using UnityEngine.Playables;
 
 public class VideoSync : MonoBehaviour
 {
-
+    public double timeOffset = 0;
     public PlayableDirector TimeLineManager;
     public VideoPlayer videoPlayer;
 
@@ -22,10 +22,17 @@ public class VideoSync : MonoBehaviour
     void FixedUpdate()
     {
 
+
+
         if (TimeLineManager.enabled == true)
         {
             //Debug.Log(videoPlayer.time);
-            videoPlayer.time = TimeLineManager.time;
+            double currentTime = TimeLineManager.time + timeOffset;
+           // Debug.Log(currentTime);
+            if (currentTime > 0)
+            {
+                videoPlayer.time = currentTime;
+            }
         }
 
     }
